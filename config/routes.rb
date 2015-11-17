@@ -4,10 +4,12 @@ Rails.application.routes.draw do
     resources :comments
   end
   
+   root 'pages#home'
+   
   get '/home', to: 'pages#home'
   
   
-  root 'welcome#index'
+ 
   
   
  
